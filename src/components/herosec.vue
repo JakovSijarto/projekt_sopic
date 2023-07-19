@@ -1,8 +1,7 @@
 <template>
-    <div class="w-full h-[100vh]">
-        <div class="bg-black w-full h-[100vh]">
+    <div class="w-full h-[100vh] bg-black">
+        <div class="w-full h-[100vh] bg_image ">
             <img src="../assets/herosectionbackground.png" class="object-fit w-full h-full max-[1370px]:hidden !bg-white" alt="">
-            <img src="../assets/herosectionbackground.jpg" alt="" class="object-fit w-full h-[100vh] min-[1371px]:hidden opacity-[0.5] !bg-white">
         </div>
         <div class="absolute z-[100] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
             <div class="w-[1340px] max-[1370px]:w-full max-[790px]:text-center">
@@ -19,12 +18,28 @@
 </script>
 
 <style>
+@media only screen and (max-width: 1370px) {
+    .bg_image{
+    opacity: 0.3;
+    }
+    .bg-black{
+        background-color: black;
+    }
+}
+
 .hover_button:hover{
         background-color: black;
         transition: all 0.4s ease-in;
     }
 .hover_button{
     transition: all 0.4s ease-out;
+}
+.bg_image{
+    background-image: url('../assets/mobile_hero_img.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 </style>
