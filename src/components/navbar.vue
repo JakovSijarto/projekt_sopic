@@ -15,7 +15,7 @@
             </a>
         </div>
         
-        <div class="hamb_menu hidden">
+        <div class="hamb_menu min-[790px]:hidden">
             <input id="checkbox" type="checkbox" @click="showMobile()">
             <label class="toggle" for="checkbox" >
             <div id="bar1" class="bars"></div>
@@ -23,7 +23,7 @@
             <div id="bar3" class="bars"></div>
         </label>
         </div>
-        <div class="hamb_menu hidden  absolute top-[-20rem] left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white w-full h-[50vh] z-[-1] max-[490px]:w-full" :class="{ active: isActive }" style="transition: all 0.4s ease-in-out;">
+        <div class="hamb_menu min-[790px]:hidden  absolute top-[-20rem] left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white w-full h-[50vh] z-[-1] max-[490px]:w-full" :class="{ active: isActive }" style="transition: all 0.4s ease-in-out;">
             <div class="absolute top-[40%] left-1/2 transform -translate-x-1/2 -translate-y-1/2"><a href="#about_us">About us</a></div>
             <div class="absolute top-[55%] left-1/2 transform -translate-x-1/2 -translate-y-1/2"><a href="#contact">Kontakt</a></div>
             <div class="absolute top-[75%] left-1/2 transform -translate-x-1/2 -translate-y-1/2">
