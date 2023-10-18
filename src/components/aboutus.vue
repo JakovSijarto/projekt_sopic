@@ -9,7 +9,7 @@
                     </div>
                     <div class="ml-[35px]  max-[600px]:w-full">
                         <p class="mb-[10px] font-bold text-[22px] latofont">Gdje vozimo?</p>
-                        <p class="catamaran leading-7">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                        <p class="catamaran leading-7">Cijelom hrvatskom i diljem cijele Europe.</p>
                     </div>
                 </div>
                 <div class="flex max-[1370px]:w-[50%] ml-8 max-[600px]:w-full max-[600px]:mx-4  max-[600px]:pt-4 max-[600px]:mr-0">
@@ -28,7 +28,7 @@
                     </div>
                     <div class="ml-[35px]  max-[600px]:w-full ">
                         <p class="mb-[10px] font-bold text-[22px] latofont">Brzina dostave</p>
-                        <p class="catamaran leading-7">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                        <p class="catamaran leading-7">Pružamo brzu i efikasnu dostavu diljem hrvatske.</p>
                     </div>
                 </div>
             </div>
