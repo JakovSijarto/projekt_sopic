@@ -49,7 +49,7 @@
                         :noSwiping="true"
                         >
                             <SwiperSlide v-for="photo in photos" >
-                                <img :src="`src/assets/${photo}`" alt="" loading="lazy" class="max-[660px]:px-8 max-[660px]:">
+                                <img :src="`/pictures/${photo}`" alt="" loading="lazy" class="max-[660px]:px-8 max-[660px]:">
                             </SwiperSlide>  
                         </Swiper>
                     </div>
