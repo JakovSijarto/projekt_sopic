@@ -18,7 +18,7 @@
                     </div>
                     <div class="ml-[35px] max-[600px]:w-full ">
                         <p class="mb-[10px] font-bold text-[22px] latofont">Komunikacija</p>
-                        <p class="catamaran leading-7 ">Nazovite nas ili nam pošaljite svoj upit i javit ćemo Vam se u najkraćem mogućem roku.</p>
+                        <p class="catamaran leading-7 w-[300px]">Nazovite nas ili nam pošaljite svoj upit i javit ćemo Vam se u najkraćem mogućem roku.</p>
                     </div>
                 </div>
                 </div>
