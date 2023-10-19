@@ -84,6 +84,3 @@ sendEmail() {
 }
 </script>
 
-<style scoped>
-
-</style>

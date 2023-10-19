@@ -12,11 +12,11 @@
                         <p class="catamaran leading-7">Cijelom hrvatskom i diljem cijele Europe.</p>
                     </div>
                 </div>
-                <div class="flex max-[1370px]:w-[50%] ml-8 max-[600px]:w-full max-[600px]:mx-4  max-[600px]:pt-4 max-[600px]:mr-0">
+                <div class="flex max-[1370px]:w-[50%] ml-8 max-[600px]:w-full max-[600px]:mx-4  max-[600px]:pt-4 max-[600px]:mr-0 max-[600px]:ml-0">
                     <div class="w-[50px] h-[50px] bg-[#e0efec] rounded-full pt-[8px] pl-[10px]">
                         <svg width="32px" height="32px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M12 8.25C9.92893 8.25 8.25 9.92893 8.25 12C8.25 14.0711 9.92893 15.75 12 15.75C14.0711 15.75 15.75 14.0711 15.75 12C15.75 9.92893 14.0711 8.25 12 8.25ZM9.75 12C9.75 10.7574 10.7574 9.75 12 9.75C13.2426 9.75 14.25 10.7574 14.25 12C14.25 13.2426 13.2426 14.25 12 14.25C10.7574 14.25 9.75 13.2426 9.75 12Z" fill="#0D4268"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M12 3.25C7.48587 3.25 4.44529 5.9542 2.68057 8.24686L2.64874 8.2882C2.24964 8.80653 1.88206 9.28392 1.63269 9.8484C1.36564 10.4529 1.25 11.1117 1.25 12C1.25 12.8883 1.36564 13.5471 1.63269 14.1516C1.88206 14.7161 2.24964 15.1935 2.64875 15.7118L2.68057 15.7531C4.44529 18.0458 7.48587 20.75 12 20.75C16.5141 20.75 19.5547 18.0458 21.3194 15.7531L21.3512 15.7118C21.7504 15.1935 22.1179 14.7161 22.3673 14.1516C22.6344 13.5471 22.75 12.8883 22.75 12C22.75 11.1117 22.6344 10.4529 22.3673 9.8484C22.1179 9.28391 21.7504 8.80652 21.3512 8.28818L21.3194 8.24686C19.5547 5.9542 16.5141 3.25 12 3.25ZM3.86922 9.1618C5.49864 7.04492 8.15036 4.75 12 4.75C15.8496 4.75 18.5014 7.04492 20.1308 9.1618C20.5694 9.73159 20.8263 10.0721 20.9952 10.4545C21.1532 10.812 21.25 11.2489 21.25 12C21.25 12.7511 21.1532 13.188 20.9952 13.5455C20.8263 13.9279 20.5694 14.2684 20.1308 14.8382C18.5014 16.9551 15.8496 19.25 12 19.25C8.15036 19.25 5.49864 16.9551 3.86922 14.8382C3.43064 14.2684 3.17374 13.9279 3.00476 13.5455C2.84684 13.188 2.75 12.7511 2.75 12C2.75 11.2489 2.84684 10.812 3.00476 10.4545C3.17374 10.0721 3.43063 9.73159 3.86922 9.1618Z" fill="#0D4268"></path> </g></svg>
                     </div>
-                    <div class="ml-[35px]  max-[600px]:w-full">
+                    <div class="ml-[35px] max-[600px]:w-full ">
                         <p class="mb-[10px] font-bold text-[22px] latofont">Komunikacija</p>
                         <p class="catamaran leading-7 ">Nazovite nas ili nam pošaljite svoj upit i javit ćemo Vam se u najkraćem mogućem roku.</p>
                     </div>
@@ -34,15 +34,31 @@
             </div>
         </div>
         <div class="flex justify-center w-full pt-[35px]">
-            <div class="flex justify-between w-[1340px] items-center max-[1370px]:flex-col max-[1370px]:w-full">
+            <div class="flex justify-between w-[1340px] items-center max-[1370px]:flex-col max-[1370px]:w-full ">
                 <div class="">
-                    <img src="../assets/img_carousel1.jpg" alt="" class="max-[1370px]:w-[60rem] max-[1370px]:h-[600px] object-cover rounded-tr-[55px] rounded-bl-[55px] w-[520px] h-[520px] experience_window px-[12px]">
-                    <div class="absolute mt-[-15rem] ml-[21rem] max-[1370px]:ml-[40rem] bg-white w-[195px] text-center pt-[15px] pr-[15px] pb-[35px] pl-[15px] rounded-tr-[45px] rounded-bl-[45px] max-[870px]:ml-[5rem] max-[490px]:ml-[1.5rem]" style=" box-shadow: 15px 15px #0D4268;">
-                        <p class="font-bold text-[100px] text-[#0D4268]  max-[870px]:text-[40px]  max-[870px]:mb-[15px]">30</p>
+                    <div class="container">
+                        <Swiper 
+                        :modules="[EffectCube, Autoplay]"
+                        effect="cube"
+                        :autoplay="{
+                                delay: 1500,
+                                disableOnInteraction: false,
+                                    }"
+                        :lazy="true"
+                        :loop="true"
+                        :noSwiping="true"
+                        >
+                            <SwiperSlide v-for="photo in photos" >
+                                <img :src="`src/assets/${photo}`" alt="" loading="lazy" class="max-[660px]:px-8 max-[660px]:">
+                            </SwiperSlide>  
+                        </Swiper>
+                    </div>
+                    <div class="absolute z-[100] mt-[-15rem] ml-[21rem] max-[1370px]:ml-[40rem] bg-white w-[195px] text-center pt-[15px] pr-[15px] pb-[35px] pl-[15px] rounded-tr-[45px] rounded-bl-[45px] max-[1370px]:ml-[5rem] max-[660px]:ml-[15rem] max-[660px]:mt-[-12rem] max-[500px]:w-[150px] max-[400px]:ml-[9rem] max-[320px]:w-[120px] max-[320px]:ml-[9rem]" style=" box-shadow: 15px 15px #0D4268;">
+                        <p class="font-bold text-[100px] text-[#0D4268]  max-[670px]:text-[40px]  max-[870px]:mb-[15px]">30</p>
                         <p class="font-bold mt-[-12px]">Godina Iskustva</p>
                     </div>
                 </div>
-                <div class="ml-[92px] mr-[12px] max-[1370px]:ml-0 max-[1370px]:mr-[15rem] max-[1370px]:mt-[5rem] max-[960px]:mr-[0rem] max-[870px]:w-full max-[870px]:flex max-[870px]:justify-center max-[870px]:flex-col max-[870px]:px-16 max-[460px]:px-6">
+                <div class="ml-[52px] mr-[12px] max-[1370px]:ml-0 max-[1370px]:mr-[15rem] max-[1370px]:mt-[5rem] max-[960px]:mr-[0rem] max-[870px]:w-full max-[870px]:flex max-[870px]:justify-center max-[870px]:flex-col max-[870px]:px-16 max-[460px]:px-6">
                     <p class="font-bold text-[15px] mb-[5px] text-[#0D4268] max-[460px]:text-[12px]">O nama</p>
                     <p class="text-[45px] font-bold latofont w-[666px] mb-[20px]  max-[870px]:w-full max-[460px]:text-[30px]">Zašto odabrati AP Sopic?</p>
                     <div class="mb-[22px]">
@@ -107,3 +123,61 @@
         </div>
     </div>
 </template>
+<script setup>
+import { Swiper, SwiperSlide } from "swiper/vue";
+import { EffectCube, Autoplay } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/effect-cube";
+import "swiper/css/autoplay";
+
+const photos = [
+  "img_carousel1.jpg",
+  "img_carousel2.jpg",
+  "img_carousel3.jpg",
+  "img_carousel4.jpg"
+]
+</script>
+<style scoped>
+@media only screen and (max-width: 660px) {
+    .swiper{
+  width: 30rem !important;
+  height: 400px !important;
+}
+}
+
+@media only screen and (max-width: 500px) {
+    .swiper{
+  width: 25rem !important;
+  height: 400px !important;
+}
+}
+@media only screen and (max-width: 400px) {
+    .swiper{
+  width: 20rem !important;
+}
+}
+
+@media only screen and (max-width: 320px) {
+    .swiper{
+  width: 18rem !important;
+}
+}
+
+.container{
+  max-width: 1000px;
+  margin:0 auto;
+  padding:50px 0;
+}
+.swiper{
+  width: 40rem;
+  height: 600px;
+  overflow: visible;
+}
+.swiper-slide img{
+  object-fit: cover;
+  border-top-right-radius: 55px;
+  border-bottom-left-radius: 55px;
+  width: 100%;
+  height:100%;
+}
+</style>
