@@ -62,7 +62,7 @@
                     <p class="font-bold text-[15px] mb-[5px] text-[#0D4268] max-[460px]:text-[12px]">O nama</p>
                     <p class="text-[45px] font-bold latofont w-[666px] mb-[20px]  max-[870px]:w-full max-[460px]:text-[30px]">Zašto odabrati AP Sopic?</p>
                     <div class="mb-[22px]">
-                        <a href="" class="border-b-[2px] border-[#0D4268] pb-[5px] text-[17px] text-[#0D4268] font-semibold mb-[20px] ">Naša Priča</a>
+                        <p class="border-b-[2px] border-[#0D4268] pb-[5px] text-[17px] text-[#0D4268] font-semibold mb-[20px] w-[85px]">Naša Priča</p>
                     </div>
                     <p class="text-[#555555] mb-[15px] catamaran w-[666px]  max-[870px]:w-full ">AP Sopic tvrtka je koja počiva na dugoj tradiciji kamionskog transporta te koja iz godine u godinu raste i razvija se. Kontinuirano radimo na poboljšanju i unapređenju naše usluge, kao i poslovnih metoda, kako bismo Vam uvijek mogli ponuditi samo najvišu kvalitetu prijevoza.
                         U mogućnosti smo održavati kvalitetu naše usluge na visokoj razini, a time i Vama, našim vjernim klijentima, ponuditi samo najbolje.</p>
@@ -131,10 +131,10 @@ import "swiper/css/effect-cube";
 import "swiper/css/autoplay";
 
 const photos = [
-  "img_carousel1.jpg",
-  "img_carousel2.jpg",
-  "img_carousel3.jpg",
-  "img_carousel4.jpg"
+  "img_carousel1.webp",
+  "img_carousel2.webp",
+  "img_carousel3.webp",
+  "img_carousel4.webp"
 ]
 </script>
 <style scoped>

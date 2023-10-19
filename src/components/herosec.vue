@@ -35,7 +35,7 @@
     transition: all 0.4s ease-out;
 }
 .bg_image{
-    background-image: url('../assets/mobile_hero_img.jpg');
+    background-image: url('../assets/mobile_hero_img.webp');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
