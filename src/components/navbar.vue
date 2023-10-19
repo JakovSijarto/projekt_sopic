@@ -1,7 +1,7 @@
 <template>
     <div class="h-[100px] w-[1340px] flex justify-between items-center max-[1370px]:w-full max-[1370px]:mx-8">
 
-        <img src="../assets/logo_navbar.png" alt="" class="h-[70%] max-[490px]:h-[50%]">
+        <img src="../assets/logo_navbar.webp" alt="" class="h-[70%] max-[490px]:h-[50%]">
         <div class="font-medium max-[790px]:hidden">
             <a href="#about_us" class="mr-[15px] hover_effect" >O nama</a>
             <a href="#contact" class="ml-[15px] hover_effect">Kontakt</a>

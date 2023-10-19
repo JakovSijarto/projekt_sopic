@@ -1,7 +1,7 @@
 <template>
     <div class="w-full h-[100vh] bg-black">
         <div class="w-full h-[100vh] bg_image ">
-            <img src="../assets/herosectionbackground.png" class="object-fit w-full h-full max-[1370px]:hidden !bg-white" alt="">
+            <img src="../assets/herosectionbackground.webp" class="object-fit w-full h-full max-[1370px]:hidden !bg-white" alt="">
         </div>
         <div class="absolute z-[100] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
             <div class="w-[1340px] max-[1370px]:w-full max-[790px]:text-center">
