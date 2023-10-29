@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage":"apsopichr.com",
+  "homepage":"https://jakovsijarto.github.io/projekt_sopic/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
