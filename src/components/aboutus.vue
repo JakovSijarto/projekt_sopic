@@ -84,7 +84,7 @@
                             <p class="text-[#555555] max-[460px]:text-[14px]">Tradicija.</p>
                         </li>
                     </ul>   
-                    <a href="#contact"><button class="py-[12px] px-[35px] bg-[#0D4268] rounded text-white hover_button mt-[30px]">Kontakt</button></a>
+                    <a href="#" v-scroll-to="'#contact'"><button class="py-[12px] px-[35px] bg-[#0D4268] rounded text-white hover_button mt-[30px]">Kontakt</button></a>
                 </div>
             </div>            
         </div>

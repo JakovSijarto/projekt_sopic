@@ -3,8 +3,8 @@
 
         <img src="../assets/logo_navbar.webp" alt="" class="h-[70%] max-[490px]:h-[50%]">
         <div class="font-medium max-[790px]:hidden">
-            <a href="#about_us" class="mr-[15px] hover_effect" >O nama</a>
-            <a href="#contact" class="ml-[15px] hover_effect">Kontakt</a>
+            <a href="#" v-scroll-to="'#about_us'" class="mr-[15px] hover_effect" >O nama</a>
+            <a href="#" v-scroll-to="'#contact'" class="ml-[15px] hover_effect">Kontakt</a>
         </div>
         <div class="flex items-center max-[790px]:hidden">
             <div class="mr-4">
@@ -24,10 +24,10 @@
         </label>
         </div>
         <div class="hamb_menu min-[790px]:hidden  absolute top-[-20rem] left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white w-full h-[50vh] z-[-1] max-[490px]:w-full" :class="{ active: isActive }" style="transition: all 0.4s ease-in-out;">
-            <div class="absolute top-[40%] left-1/2 transform -translate-x-1/2 -translate-y-1/2"><a href="#about_us">O nama</a></div>
-            <div class="absolute top-[55%] left-1/2 transform -translate-x-1/2 -translate-y-1/2"><a href="#contact">Kontakt</a></div>
+            <div class="absolute top-[40%] left-1/2 transform -translate-x-1/2 -translate-y-1/2"><a href="#" v-scroll-to="'#about_us'">O nama</a></div>
+            <div class="absolute top-[55%] left-1/2 transform -translate-x-1/2 -translate-y-1/2"><a href="#" v-scroll-to="'#contact'">Kontakt</a></div>
             <div class="absolute top-[75%] left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-              <a href="#contact"><button class="py-[12px] px-[35px] bg-[#0D4268] rounded text-white hover_button ">Contact Us</button> </a>
+              <a href="#" v-scroll-to="'#about_us'"><button class="py-[12px] px-[35px] bg-[#0D4268] rounded text-white hover_button ">Contact Us</button> </a>
             </div>
         </div>
     </div>
